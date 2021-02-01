@@ -16,6 +16,7 @@ public class Test_GET {
 		
 		Logger logger = Logger.getLogger("test logs");
 		logger.setLevel(Level.ALL);
+		LogManager.getLogManager().reset();
 		ConsoleHandler ch = new ConsoleHandler();
 		ch.setLevel(Level.SEVERE);
 		logger.addHandler(ch);
